@@ -1,0 +1,16 @@
+The package requirements for this Python program are:
+
+- requests
+- bs4
+- googleapiclient
+- google-auth
+- textblob
+- pandas
+- matplotlib
+- wordcloud
+
+You can install these packages using pip:
+
+```
+pip install requests bs4 google-api-python-client google-auth textblob pandas matplotlib wordcloud
+```
