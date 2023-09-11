@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import datetime
 import time
+import re
 
 
 class WebScraper:
@@ -53,7 +54,8 @@ class DataCleaner:
     def clean(self, text):
         # Remove noise and correct text formatting
         # Implement your data cleaning logic here
-        cleaned_text = text.strip()  # Remove leading and trailing whitespaces
+        # Remove leading and trailing whitespaces
+        cleaned_text = re.sub(r'\s+', ' ', text.strip())
         return cleaned_text
 
 
